@@ -28,18 +28,20 @@ body {
     margin-bottom: 8px;
 }
 
-.navbar {
-    background: #D6FFF6;
-    position: fixed;
-    width: 100%;
-    height: 50px;
-    margin: -8px;
-}
-
-.about {}
-
 .paragraph {
     border: 3px solid rgb(33, 107, 98);
     border-radius: 5px;
     padding: 8px;
+}
+
+.about {}
+
+.box {
+    border: 10px solid red;
+    padding: 10px;
+    width: 80px;
+    height: 80px;
+    background: tomato;
+    box-sizing: border-box;
+    position: absolute;
 }
