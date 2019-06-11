@@ -1,3 +1,24 @@
 body {
-    background: red;
+    background: #fefefe;
+    color: #333;
+}
+
+.link {
+    color: rgb(33, 107, 98);
+}
+
+.heading {
+    color: #022F40
+}
+
+.sectionHeader {
+    color: #0090C1;
+}
+
+.thirdHeader {
+    color: #38AECC;
+}
+
+.navbar {
+    background: #D6FFF6;
 }
