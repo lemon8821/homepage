@@ -10,11 +10,11 @@ body {
 	margin: 0 auto;
 }
 
-.link {
+.navbar__link {
 	color: rgb(33, 107, 98);
 }
 
-.heading {
+.header__heading {
 	color: #022F40;
 	margin-bottom: 48px;
 }
@@ -36,17 +36,7 @@ body {
 
 .about {}
 
-.box {
-	border: 10px solid red;
-	padding: 10px;
-	width: 80px;
-	height: 80px;
-	background: tomato;
-	box-sizing: border-box;
-	position: absolute;
-	top: 20px;
-	left: 50%;
-}
+
 
 .loader {
 	width: 50px;
@@ -109,4 +99,22 @@ body {
 	to {
 		transform: rotate(360deg);
 	}
+}
+
+.about__image {
+	max-width: 100px;
+	width: 100%;
+	display: block;
+	float: left;
+	margin: 0 16px 16px 0;
+
+}
+
+.about__paragraph {
+
+	
+}
+
+.diary {
+	clear: both;
 }
