@@ -2,68 +2,99 @@
 <html lang="pl">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link href="style.css" type="text/css" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link href="normalize.css" type="text/css" rel="stylesheet">
+	<link href="style.css" type="text/css" rel="stylesheet">
+
 </head>
 
 <body>
-    <header class="navbar">
-        <a class="navbar__link" href="index.html">Strona główna</a>
-        <a class="navbar__link" href="podstrona1.html">Podstrona 1</a>
-        <a class="navbar__link" href="podstrona2.html">Podstrona 2</a>
-    </header>
-    <main class="main">
-        <header class="header">
-            <h1 class="header__heading">Strona główna</h1>
-        </header>
-        <section class="about">
+	<header class="main-header">
+		<nav class="navbar">
+			<ul class="navbar__list">
+				<li class="navbar__item">
+					<a class="navbar__link" href="index.html">Strona główna</a>
+				</li>
+				<li class="navbar__item">
+					<a class="navbar__link" href="podstrona1.html">Podstrona 1</a>
+				</li>
+				<li class="navbar__item">
+					<a class="navbar__link" href="podstrona2.html">Podstrona 2</a>
+				</li>
 
-            <h2 class="about__sectionHeader">About</h2>
-            <img src="lumpy.png" alt="lumpy" class="about__image">
-            <p class="about__paragraph"> Lorem ipsum dolor sit,
-                amet consectetur adipisicing elit. Neque accusantium
-                obcaecati adipisci nemo necessitatibus ipsam accusamus ipsum, modi magnam. Modi sed, nobis voluptatibus
-                fugiat ex veritatis in non illum autem.</p>
-        </section>
-        <section class="diary">
-            <section>
-                <h2 class="sectionHeader">Nagłówek 1</h2>
-                <section>
-                    <h3 class="thirdHeader">Heading 3</h3>
-                    <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque accusantium
-                        obcaecati adipisci nemo necessitatibus ipsam accusamus ipsum, modi magnam. Modi sed, nobis
-                        voluptatibus fugiat ex veritatis in non illum autem.</p>
-                </section>
-            </section>
-            <section>
-                <h3 class="thirdHeader">Heading 3</h3>
-                <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque accusantium
-                    obcaecati adipisci nemo necessitatibus ipsam accusamus ipsum, modi magnam. Modi sed, nobis
-                    voluptatibus fugiat ex veritatis in non illum autem.</p>
-            </section>
-            <section>
-                <h3 class="thirdHeader">Heading 3</h3>
-                <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque accusantium
-                    obcaecati adipisci nemo necessitatibus ipsam accusamus ipsum, modi magnam. Modi sed, nobis
-                    voluptatibus fugiat ex veritatis in non illum autem.</p>
-            </section>
-            <section>
-                <h3 class="thirdHeader">Heading 3</h3>
-                <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque accusantium
-                    obcaecati adipisci nemo necessitatibus ipsam accusamus ipsum, modi magnam. Modi sed, nobis
-                    voluptatibus fugiat ex veritatis in non illum autem.</p>
-            </section>
-            <section>
-                <h3 class="thirdHeader">Heading 3</h3>
-                <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque accusantium
-                    obcaecati adipisci nemo necessitatibus ipsam accusamus ipsum, modi magnam. Modi sed, nobis
-                    voluptatibus fugiat ex veritatis in non illum autem.</p>
-            </section>
-        </section>
-    </main>
+			</ul>
+		</nav>
+
+
+	</header>
+
+	<main class="main">
+		<header class="header">
+			<h1 class="header__heading">Strona główna</h1>
+		</header>
+		<section class="about about--js">
+
+			<h2 class="about__sectionHeader">About</h2>
+			<img src="lumpy.png" alt="lumpy" class="about__image">
+			<p class="about__paragraph about__paragraph--js"> Lorem ipsum dolor sit,
+				amet consectetur adipisicing elit. Neque accusantium
+				obcaecati adipisci nemo necessitatibus ipsam accusamus ipsum, modi magnam. Modi sed, nobis voluptatibus
+				fugiat ex veritatis in non illum autem.
+			</p>
+		</section>
+		<section class="diary">
+				<h2 class="diary__header--big">Nagłówek 1</h2>
+				<section class="hobby">
+						<div>
+					<h3 class="hobby_header">Hobby List</h3>
+					<ul class="hobby_list">
+						<li>
+							HTML
+						</li>
+						<li>
+							CSS
+						</li>
+						<li>
+							JS
+							<ol>
+								<li>React</li>
+								<li>AngularJS</li>
+							</ol>
+						</li>
+					</ul>
+			</div>
+			<aside class="obrazek"></aside>
+		</section>
+		<section class="day">
+			<h3 class="day__header">Heading 3</h3>
+			<p class="day__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque accusantium
+				obcaecati adipisci nemo necessitatibus ipsam accusamus ipsum, modi magnam. Modi sed, nobis
+				voluptatibus fugiat ex veritatis in non illum autem.</p>
+		</section>
+		<section class="day">
+			<h3 class="day__header">Heading 3</h3>
+			<p class="day__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque accusantium
+				obcaecati adipisci nemo necessitatibus ipsam accusamus ipsum, modi magnam. Modi sed, nobis
+				voluptatibus fugiat ex veritatis in non illum autem.</p>
+		</section>
+		<section class="day">
+			<h3 class="day__header">Heading 3</h3>
+			<p class="day__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque accusantium
+				obcaecati adipisci nemo necessitatibus ipsam accusamus ipsum, modi magnam. Modi sed, nobis
+				voluptatibus fugiat ex veritatis in non illum autem.</p>
+		</section>
+		<section class="day">
+			<h3 class="day__header">Heading 3</h3>
+			<p class="day__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque accusantium
+				obcaecati adipisci nemo necessitatibus ipsam accusamus ipsum, modi magnam. Modi sed, nobis
+				voluptatibus fugiat ex veritatis in non illum autem.</p>
+		</section>
+		</section>
+	</main>
+	<script src="main.js"></script>
 </body>
 
 </html>
