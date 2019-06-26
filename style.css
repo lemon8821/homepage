@@ -29,9 +29,10 @@ body {
 .navbar__list {
   list-style: none;
   padding: 0;
+  height: 60px;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  align-items: center;
   justify-content: center;
   margin: 0;
 }
@@ -40,11 +41,9 @@ body {
   padding: 8px;
   background: rgb(139, 14, 39);
   border-radius: 5px;
-  margin: 2px;
+  margin: 0px 8px;
   width: 130px;
   text-align: center;
-
-
 }
 .navbar__item:hover {
   background: black;
@@ -97,7 +96,7 @@ body {
   border: 3px solid rgb(33, 107, 98);
   border-radius: 5px;
   padding: 8px;
-
+  min-width: 200px;
 
 
 }

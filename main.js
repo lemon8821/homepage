@@ -1,12 +1,7 @@
-const name = 'Lemon';
-var doc = document.querySelector('.about__paragraph--js');
-doc.addEventListener("click", function () {
-    if (document.querySelector("body > main > section.about.about--js > p:nth-child(4)") == undefined)
-    doc.insertAdjacentHTML("afterend",`<p>Hello, ${name}!</p>`);
-})
-
-function calculate(x) {
-    return x+3;
+const name = 'Daniel';
+const age = 25;
+const box = document.getElementById('about__credentials');
+greetings(name,age);
+function greetings(name, age) {
+    box.innerHTML = `${name}, ${age} lat`
 }
-
-const calc = s => s+2;
