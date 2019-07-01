@@ -2,54 +2,82 @@
 <html lang="pl">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
 	<link href="normalize.css" type="text/css" rel="stylesheet">
-    <link href="style.css" type="text/css" rel="stylesheet">
+	<link href="style.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
-        <header class="main-header">
-                <nav class="navbar">
-                    <ul class="navbar__list">
-                        <li class="navbar__item">
-                            <a class="navbar__link" href="index.html">Strona główna</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a class="navbar__link" href="podstrona1.html">Podstrona 1</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a class="navbar__link" href="podstrona2.html">Podstrona 2</a>
-                        </li>
-        
-                    </ul>
-                </nav>
-        
-        
-            </header>
-    <main class="main">
-        <header class="header">
-            <h1 class="heading">Strona główna</h1>
-        </header>
-        <section>
-            <h2 class="sectionHeader">Nagłówek 1</h2>
-            <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque accusantium obcaecati adipisci nemo necessitatibus ipsam accusamus ipsum, modi magnam. Modi sed, nobis voluptatibus fugiat ex veritatis in non illum autem.</p>
-        </section>
-        <section>
-            <h2 class="sectionHeader">Nagłówek 1</h2>
-            <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque accusantium obcaecati adipisci nemo necessitatibus ipsam accusamus ipsum, modi magnam. Modi sed, nobis voluptatibus fugiat ex veritatis in non illum autem.</p>
-        </section>
-        <section>
-            <h2 class="sectionHeader">Nagłówek 1</h2>
-            <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque accusantium obcaecati adipisci nemo necessitatibus ipsam accusamus ipsum, modi magnam. Modi sed, nobis voluptatibus fugiat ex veritatis in non illum autem.</p>
-        </section>
-        <section>
-            <h2 class="sectionHeader">Nagłówek 1</h2>
-            <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque accusantium obcaecati adipisci nemo necessitatibus ipsam accusamus ipsum, modi magnam. Modi sed, nobis voluptatibus fugiat ex veritatis in non illum autem.</p>
-        </section>
-    </main>
+	<header class="main-header">
+		<nav class="navbar">
+			<ul class="navbar__list">
+				<li class="navbar__item">
+					<a class="navbar__link" href="index.html">Strona główna</a>
+				</li>
+				<li class="navbar__item">
+					<a class="navbar__link" href="podstrona1.html">Formularze</a>
+				</li>
+				<li class="navbar__item">
+					<a class="navbar__link" href="podstrona2.html">Tabela</a>
+				</li>
+				<li class="navbar__item">
+					<a class="navbar__link" href="podstrona3.html">Grid</a>
+				</li>
+			</ul>
+		</nav>
+
+
+	</header>
+	<main class="main">
+		<header class="header">
+			<h1 class="heading">Strona główna</h1>
+		</header>
+		<form action="https://dev.cotenfrontend.pl" class="form" method="GET">
+			<p>
+				<label for="name">Imie: </label><br>
+				<input name="name" type="text" id="name">
+			</p>
+			<p>
+				<label for="surname">Nazwisko: </label><br>
+				<input name="surname" type="text" id="surname">
+			</p>
+			<fieldset>
+				<legend>Select One</legend>
+				<p>
+					<input value="x" name="radio" type="radio" id="radio1">
+					<label for="radio1">Option 1: </label>
+				</p>
+				<p>
+					<input name="radio" type="radio" id="radio2">
+					<label for="radio2">Option 2: </label>
+				</p>
+				<p>
+					<input name="radio" type="radio" id="radio3">
+					<label for="radio3">Option 3: </label>
+				</p>
+			</fieldset>
+			<p>
+				<label for="checkbox1">check 1 </label>
+				<input name="checkbox" type="checkbox" id="checkbox1">
+			</p>
+			<p>
+				<label for="checkbox2">check 2 </label>
+				<input name="checkbox" type="checkbox" id="checkbox2">
+			</p>
+			<p>
+				<label for="select">select</label>
+				<select name="select" id="select">
+					<option>YES</option>
+					<option>NO</option>
+				</select>
+			</p>
+			<input type="file">
+			<input type="submit" value="Send form">
+		</form>
+	</main>
 </body>
 
 </html>

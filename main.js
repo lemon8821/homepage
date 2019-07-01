@@ -1,7 +1,7 @@
-const name = 'Daniel';
-const age = 25;
-const box = document.getElementById('about__credentials');
-greetings(name,age);
-function greetings(name, age) {
-    box.innerHTML = `${name}, ${age} lat`
-}
+const buttonSwitcher = document.querySelector('.navigation__switcher--js');
+const nav = document.querySelector('.navbar__list');
+buttonSwitcher.addEventListener('click',() => {
+    nav.classList.toggle('navbar__list--visible');
+    nav.classList.contains('navbar__list--visible') ? buttonSwitcher.innerHTML = 'X' : buttonSwitcher.innerHTML = '&#9776;';
+})
+

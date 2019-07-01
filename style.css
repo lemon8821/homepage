@@ -11,12 +11,13 @@ body {
   margin: 0;
   overflow-y: scroll;
   background: linear-gradient(180deg, rgba(220,20,60,1) 0%, rgba(242,137,106,0.8547794117647058) 50%, rgba(255,255,255,1) 100%) no-repeat;
+  min-height: 100vh;
 }
 
 .main {
   padding: 50px 8px 0 8px;
   width: 100%;
-  max-width: 900px;
+  max-width: 800px;
   margin: 0 auto;
   min-height: 80vh;
 }
@@ -24,39 +25,42 @@ body {
   background: crimson;
   position: fixed;
   width: 100%;
+  min-height: 56px;
 }
 
 .navbar__list {
-  list-style: none;
-  padding: 0;
-  height: 60px;
+
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin: 0;
+
 }
 
 .navbar__item {
-  padding: 8px;
-  background: rgb(139, 14, 39);
-  border-radius: 5px;
-  margin: 0px 8px;
-  width: 130px;
-  text-align: center;
+  list-style: none;
+  margin: 0 8px;
 }
 .navbar__item:hover {
-  background: black;
-}
 
+}
 
 .navbar__link {
-  text-decoration: none;
-  color: white;
+
 }
+
+
+
+
+
 .header__heading {
   color: #022f40;
   margin-bottom: 48px;
+}
+
+.header__heading--black {
+  color: black;
+  background: hotpink;
 }
 
 .diary__header--big {
@@ -156,4 +160,79 @@ td {
 td:nth-child(1),
 td:nth-child(3) {
   text-align: center;
+}
+
+.page__grid {
+  padding-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 100px 200px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-areas: "header header header"
+  "content . menu"
+  "footer footer footer";
+}
+
+.page__grid__item {
+  background: purple;
+  border-radius: 5px;
+}
+
+.page__grid__header {
+  grid-area: header;
+  text-align: center;
+}
+
+.page__grid__article {
+  grid-area: content;
+}
+
+.page__grid__nav {
+  grid-area: menu;
+}
+.page__grid__footer {
+  grid-area: footer;
+}
+.page__grid__element {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+}
+
+@media (min-width: 701px) {
+  .main {
+    max-width: 900px;
+  }
+  .navigation__switcher {
+    display: none;
+  }
+
+}
+@media (max-width: 700px) {
+  .navbar__list {
+    flex-direction: column;
+    display: none;
+  }
+  .navbar__list--visible {
+    display: flex;
+  }
+  .navbar__item {
+    margin: 16px;
+  }
+  .navigation__switcher {
+    border: none;
+    background: none;
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    font-size: 1.4em;
+  }
 }
