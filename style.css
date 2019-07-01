@@ -46,7 +46,7 @@ body {
 }
 
 .navbar__link {
-
+  text-decoration: none;
 }
 
 
@@ -202,7 +202,7 @@ td:nth-child(3) {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 16px;
   grid-row-gap: 16px;
 }
@@ -217,9 +217,13 @@ td:nth-child(3) {
 
 }
 @media (max-width: 700px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
   .navbar__list {
     flex-direction: column;
     display: none;
+    padding-inline-start: 0;
   }
   .navbar__list--visible {
     display: flex;

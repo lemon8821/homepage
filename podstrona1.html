@@ -11,38 +11,36 @@
 </head>
 
 <body>
-	<header class="main-header">
-		<nav class="navbar">
-			<ul class="navbar__list">
-				<li class="navbar__item">
-					<a class="navbar__link" href="index.html">Strona główna</a>
-				</li>
-				<li class="navbar__item">
-					<a class="navbar__link" href="podstrona1.html">Formularze</a>
-				</li>
-				<li class="navbar__item">
-					<a class="navbar__link" href="podstrona2.html">Tabela</a>
-				</li>
-				<li class="navbar__item">
-					<a class="navbar__link" href="podstrona3.html">Grid</a>
-				</li>
-			</ul>
-		</nav>
-
-
-	</header>
+		<header class="main-header">
+				<button class="navigation__switcher navigation__switcher--js">&#9776;</button>
+			<nav class="navbar">
+				<ul class="navbar__list navbar__list--js">
+					<li class="navbar__item">
+						<a class="navbar__link" href="index.html">Strona główna</a>
+					</li>
+					<li class="navbar__item">
+						<a class="navbar__link" href="podstrona1.html">Formularze</a>
+					</li>
+					<li class="navbar__item">
+						<a class="navbar__link" href="podstrona2.html">Tabela</a>
+					</li>
+					<li class="navbar__item">
+						<a class="navbar__link" href="podstrona3.html">Grid</a>
+					</li>
+				</ul>
+	
+			</nav>
+			
+	
+		</header>
 	<main class="main">
 		<header class="header">
 			<h1 class="heading">Strona główna</h1>
 		</header>
-		<form action="https://dev.cotenfrontend.pl" class="form" method="GET">
+		<form action="https://dev.cotenfrontend.pl" class="form" method="POST">
 			<p>
 				<label for="name">Imie: </label><br>
-				<input name="name" type="text" id="name">
-			</p>
-			<p>
-				<label for="surname">Nazwisko: </label><br>
-				<input name="surname" type="text" id="surname">
+				<input name="name" type="text" id="name" value="daniel">
 			</p>
 			<fieldset>
 				<legend>Select One</legend>
@@ -78,6 +76,7 @@
 			<input type="submit" value="Send form">
 		</form>
 	</main>
+	<script src="main.js"></script>
 </body>
 
 </html>
