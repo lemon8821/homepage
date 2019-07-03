@@ -5,3 +5,13 @@ buttonSwitcher.addEventListener('click',() => {
     nav.classList.contains('navbar__list--visible') ? buttonSwitcher.innerHTML = 'X' : buttonSwitcher.innerHTML = '&#9776;';
 })
 
+const deathStar = {
+    diameter: 12000,
+    isAvaliable: true,
+    fire: () => {return console.log('bum')},
+    name: 'ds',
+    crew: {
+        captain: 'me',
+        commandor: 'he'
+    }
+}

@@ -20,7 +20,13 @@ body {
   max-width: 800px;
   margin: 0 auto;
   min-height: 80vh;
+
 }
+.header {
+  grid-area: header;
+
+}
+
 .main-header {
   background: crimson;
   position: fixed;
@@ -47,6 +53,7 @@ body {
 
 .navbar__link {
   text-decoration: none;
+  padding: 8px;
 }
 
 
@@ -68,9 +75,10 @@ body {
 }
 
 .day__header {
-  color: #38aecc;
+  color: #1c5d6d;
   margin-bottom: 8px;
 }
+
 
 .day__paragraph {
   border: 3px solid rgb(33, 107, 98);
@@ -80,6 +88,7 @@ body {
 }
 
 .about {
+  grid-area: about;
 
 }
 
@@ -107,6 +116,7 @@ body {
 
 .diary {
   clear: both;
+  grid-area: content;
 }
 
 .hobby {
@@ -116,7 +126,7 @@ body {
 }
 .obrazek {
   background-image: url('./htf.png');
-  width: 60vw;
+  width: 200px;
 
   background-position: center center;
   margin: 8px;
@@ -163,14 +173,12 @@ td:nth-child(3) {
 }
 
 .page__grid {
-  padding-top: 60px;
   display: grid;
-  grid-template-columns: 1fr 100px 200px;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-  grid-template-areas: "header header header"
-  "content . menu"
-  "footer footer footer";
+  grid-template-areas: "header header"
+  "about content";
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 80px 1fr;
+  grid-gap: 16px;
 }
 
 .page__grid__item {
@@ -204,7 +212,8 @@ td:nth-child(3) {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 16px;
-  grid-row-gap: 16px;
+
+  
 }
 
 @media (min-width: 701px) {
@@ -238,5 +247,14 @@ td:nth-child(3) {
     right: 16px;
     top: 16px;
     font-size: 1.4em;
+  }
+  .main {
+    grid-template-areas: "header"
+    "content"
+    "about";
+    grid-template-columns: 1fr;
+  }
+  .obrazek {
+    display: none;
   }
 }
